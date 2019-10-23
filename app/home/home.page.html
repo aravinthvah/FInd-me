@@ -1,0 +1,74 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      FindMe
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content >
+	
+  
+ <ion-card class="welcome-card">
+     
+      <ion-card-header>
+        <ion-card-title color="primary" align="center"><b>LOCATION INFORMATION:</b></ion-card-title><br/>
+
+        <ion-card-title><b>Latitude  :</b>{{latitude}}</ion-card-title>
+        <ion-card-title><b>Longitude :</b>{{longitude}}</ion-card-title>
+        <ion-card-title><b>Accuracy  :</b>{{accuracy}}</ion-card-title>
+        <ion-card-title><b>Time      :</b>{{time}}</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <p color="warning">Ensure that Internet and Location is On otherwise can't collect your location</p>
+      </ion-card-content>
+    </ion-card>
+  
+  <ion-card>
+ 
+      <ion-card-header>
+        <ion-card-title color="primary"><h1>Status</h1></ion-card-title>
+      
+        <ion-icon slot="start" color="medium" name="locate"></ion-icon>
+        <ion-card-title><b>Next Data Saved In:</b>00:{{timer}}</ion-card-title>
+        <ion-icon slot="start" color="medium" name="pin"></ion-icon>
+        <ion-card-title><b>Records Stored in this session:</b> {{datacount}}</ion-card-title>
+        </ion-card-header>
+      </ion-card>
+    
+    
+	
+	
+	
+	<ion-fab vertical="start" horizontal="right" color="primary" >
+	
+    <ion-fab-button color="success"><ion-icon name="information"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-list side="down">
+	 <ion-item>
+          <ion-icon slot="start" color="primary" name="person"></ion-icon>
+          <ion-label color="primary">Name:V.Aravinth</ion-label>
+        </ion-item>
+      <ion-item>
+        <ion-icon slot="start" color="primary" name="school"></ion-icon>
+        <ion-label color="primary" >Master of Computer Applications<br></ion-label>
+      </ion-item>
+	  <ion-item>
+      <ion-icon slot="start" color="primary" name="school"></ion-icon>
+        <ion-label color="primary">Thiagarajar college of enggineering<br></ion-label>
+      </ion-item>
+     
+    </ion-fab-list>
+ </ion-fab>
+
+  
+
+ 
+
+   
+
+
+</ion-content>
